@@ -34,12 +34,16 @@ const DaysUntil2029 = () => {
     }, []);
 
     return (
-        <div style={{ textAlign: 'center', marginTop: '50px' }}>
-            <h1>How many days remaining of Trump's presidency?</h1>
-            <p>
-                There are <strong>{timeLeft.days}</strong> days, <strong>{timeLeft.hours}</strong> hours, <strong>{timeLeft.minutes}</strong> minutes, and <strong>{timeLeft.seconds}</strong> seconds left with Trump as president &#129310;.
-            </p>
+        <div class="container">
+            <div class="text-block">
+                <h1>How many days remaining of Trump's presidency?</h1>
+                <p>
+                    There are <strong>{timeLeft.days}</strong> days, <strong>{timeLeft.hours}</strong> hours, <strong>{timeLeft.minutes}</strong> minutes, and <strong>{timeLeft.seconds}</strong> seconds left with Trump as president &#129310;.
+                </p>
+            </div>
         </div>
+
+
     );
 };
 
